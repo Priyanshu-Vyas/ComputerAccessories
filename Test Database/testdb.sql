@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2019 at 10:15 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- Generation Time: Nov 05, 2022 at 07:14 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -40,7 +39,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`user_id`, `first_name`, `last_name`, `password`) VALUES
-(1, 'Hassan Munir', 'Chaudhary', '12345678');
+(1, 'Aditya', 'Bhardwaj', '12345678');
 
 -- --------------------------------------------------------
 
@@ -65,7 +64,10 @@ INSERT INTO `buy` (`product_id`, `user_id`, `quantity`, `total`, `order_id`, `au
 (4, 1, 1, 500, 1, 1),
 (4, 1, 10, 5000, 2, 2),
 (4, 1, 1, 500, 3, 3),
-(4, 1, 1, 500, 4, 4);
+(4, 1, 1, 500, 4, 4),
+(13, 1, 1, 2500, 5, 5),
+(13, 1, 4, 10000, 6, 6),
+(11, 1, 4, 23996, 6, 7);
 
 -- --------------------------------------------------------
 
@@ -80,6 +82,15 @@ CREATE TABLE `cart` (
   `total` int(20) NOT NULL,
   `autoincrement` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`product_id`, `user_id`, `quantity`, `total`, `autoincrement`) VALUES
+(13, 1, 1, 2500, 4),
+(12, 1, 1, 5999, 5),
+(15, 1, 4, 2268, 6);
 
 -- --------------------------------------------------------
 
@@ -119,7 +130,8 @@ CREATE TABLE `coupon` (
 --
 
 INSERT INTO `coupon` (`coupon_code`, `money`) VALUES
-('1122', 10000);
+('1122', 10000),
+('1123', 5);
 
 -- --------------------------------------------------------
 
@@ -141,7 +153,9 @@ INSERT INTO `orders` (`order_id`, `user_id`, `status`) VALUES
 (1, 1, 'delivered'),
 (2, 1, 'delivered'),
 (3, 1, 'pending'),
-(4, 1, 'pending');
+(4, 1, 'pending'),
+(5, 1, 'pending'),
+(6, 1, 'pending');
 
 -- --------------------------------------------------------
 
@@ -151,7 +165,7 @@ INSERT INTO `orders` (`order_id`, `user_id`, `status`) VALUES
 
 CREATE TABLE `products` (
   `product_id` int(10) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
+  `product_name` varchar(300) NOT NULL,
   `category_id` int(10) NOT NULL,
   `date_added` datetime NOT NULL,
   `description` varchar(2000) NOT NULL,
@@ -164,17 +178,18 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_name`, `category_id`, `date_added`, `description`, `price`, `icon_name`) VALUES
-(4, 'Handfree Audonic', 3, '2019-05-04 12:25:00', 'We love the louder', 500, 'handfree.jpg'),
-(5, 'Leather shoes', 5, '2019-05-12 12:08:47', 'Easy Walk', 5000, 'f3eb66.jpg'),
-(6, 'Men Jacket', 4, '2019-05-12 12:10:07', 'New Fashion...\r\nNew look...\r\nNew design', 6000, 'images (3).jpg'),
-(7, 'Men Shirt 1', 4, '2019-05-12 12:10:40', 'Shirt', 800, 'ff882d2d5edb41ffb6a1ce6088ff2e47_350x350.jpg'),
-(8, 'Men Shirt 3', 4, '2019-05-12 12:11:39', 'Shirt', 800, 'download (1).jpg'),
-(9, 'Men Shirt 4', 4, '2019-05-12 12:11:54', 'Shirt', 800, 'images (7).jpg'),
-(10, 'Men Shirt 5', 4, '2019-05-12 12:13:32', 'Shirt', 800, 'images (5).jpg'),
-(11, 'Jacket', 4, '2019-05-12 12:16:03', 'Beautiful Jacket', 5999, 'HTB1TAyHSMHqK1RjSZFEq6AGMXXaO.jpg_220x220q90.jpg_.webp'),
-(12, 'Woman Wear 1', 4, '2019-05-12 12:16:36', 'Beautiful Jacket', 5999, 'blusas-mujer-de-moda-2018-white-hollow-lace-chiffon-blouse-shirt-long-sleeve-womens-tops-and.jpg_220x220xz.webp'),
-(13, 'Woman Wear 2', 4, '2019-05-12 12:16:54', 'Beautiful Jacket', 2500, 'download (2).jpg'),
-(14, 'Woman Wear 3', 4, '2019-05-12 12:17:20', 'agvbfak', 1800, 'Fashion-5XL-Plus-Large-Size-Women-s-Blouses-Summer-Tops-New-Leisure-Blouse-White-Loose-Feather.jpg_220x220xz.webp');
+(4, 'Logitech B170 Wireless Mouse', 3, '2019-05-04 12:25:00', 'Reliable Wireless Connection : Enjoy a wireless connection up to 10m away thanks to a plug-and-forget USB mini-receiver', 500, '1.jpg'),
+(5, 'STRIFF Adjustable Laptop Stand ', 5, '2019-05-12 12:08:47', 'FOLDABLE, PORTABLE, LIGHTWEIGHT: The Carnation Laptop Stand has a thin, hard plastic frame. It can be easily folded and carried around. Durable enough to withstand the weight of up to 55 lbs (25kg).', 5000, '2.jpg'),
+(6, 'Wired RGB Wired Headphones', 4, '2019-05-12 12:10:07', 'Sound Quality: Redgear Cloak comes equipped with 50mm Driver with Enhanced audio bass and clarity which dramatically improves your in-game sound experience. Inline Remote : No', 6000, '3.jpg'),
+(7, 'Zebronics Zeb-Companion', 4, '2019-05-12 12:10:40', 'Keyboard Interface USB (Nano receiver) Total No.of Keys 104\nCompanion 107 is a wireless keyboard and mouse combo that comes with a nano receiver built for home/office use. Plug and Play\nMouse Interface USB (Nano Receiver) Resolution 1200 DPI No. of Buttons 3', 800, '4.jpg'),
+(8, 'Gaming Mouse with LED Effect(Black)', 4, '2019-05-12 12:11:39', 'Gaming mouse: ZEB-Transformer-M premium gaming mouse is designed for gamers who want the perfect fusion of high DPI, precision gaming along with LED lights.', 800, '5.jpg'),
+(9, 'Zebronics ZEB-90HB USB Hub', 4, '2019-05-12 12:11:54', '4-Port USB 2.0 Hub. Cable length 50 cm\nUseful for Laptops, PC & Computers, Mac book\nPocket Sized, Easy to Carry\nPlug & Play', 800, '6.jpg'),
+(10, 'Logitech K480 Wireless Multi-Device Keyboard', 4, '2019-05-12 12:13:32', 'Type on Any Device: A new type of wireless computer keyboard for your desk that also works with your tablet and smartphone; connect with any Bluetooth-enabled device with external keyboard support.', 800, '7.jpg'),
+(11, 'Redgear Pro Wireless Gamepad', 4, '2019-05-12 12:16:03', 'Gamepad comes equipped with2.4GHz wireless technology and supports up to 10 metres range, an ideal choice for those looking to enjoy your favourite games without the hassle of cables and wires.\nThe built-in lithium-ion battery in the gamepad can provide', 5999, '8.jpg'),
+(12, 'Redgear A-15 Wired Gaming Mouse', 4, '2019-05-12 12:16:36', 'Compatibility: Redgear A15 is compatible with PCs, laptops, notebooks and other devices with a similar input.', 5999, '9.jpg'),
+(13, 'APC Back-UPS BX600C-IN 600VA / 360W', 4, '2019-05-12 12:16:54', 'Compact Design Line Interactive UPS with Load Capacity of 360Watts / 600VA. Output Frequency (sync to mains) : 47 - 63 Hz Sync to mains', 2500, '10.jpg'),
+(14, 'HP 14(2021) 10th Gen', 5, '2022-11-05 17:29:14', 'Free upgrade to Windows 11 when available* Disclaimer-*The Windows 11 upgrade will be delivered late 2021 into 2022. Timing varies by device. Certain features require specific hardware.', 299, '11.jpg'),
+(15, 'Redgear MP35 Speed-Type Gaming Mousepad', 5, '2022-11-05 17:30:00', 'Speed-type surface mousepad is designed with the use of great technology and craftsmanship especially for professional gamers. Non-slip rubber base', 567, '12.jpg');
 
 -- --------------------------------------------------------
 
@@ -196,11 +211,9 @@ CREATE TABLE `userss` (
 --
 
 INSERT INTO `userss` (`user_id`, `first_name`, `last_name`, `password`, `wallet`, `address`) VALUES
-(1, 'Hassan Munir', 'Chaudhary', '12345678', 999999, 'Sargodha'),
-(2, 'wajid', 'haneef', '12345678', 500, 'lahore mt'),
-(3, 'adeel', 'tajamul', '12345678', 100, 'lahore wt'),
-(4, 'jahangir', 'maqsood', '12345678', 50, 'lahore mp'),
-(5, 'usman', 'Chaudhary', '12345678', 25, 'lahore');
+(1, 'Aditya', 'Bhardwaj', '12345678', 952736, 'Ranchi'),
+(2, 'Priyanshu', 'Vyas', '12345678', 5000, 'Rajasthan'),
+(3, 'Himanshu', 'Baid', '12345678', 8000, 'Gujrat');
 
 --
 -- Indexes for dumped tables
@@ -262,13 +275,13 @@ ALTER TABLE `userss`
 -- AUTO_INCREMENT for table `buy`
 --
 ALTER TABLE `buy`
-  MODIFY `autoincrement` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `autoincrement` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `autoincrement` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `autoincrement` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
