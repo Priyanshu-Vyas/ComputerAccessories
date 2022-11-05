@@ -1,0 +1,49 @@
+<?php
+						echo '<a href="product.php?product_id=' . $productid . '">
+				                    		<img class="pic-1" src="images/' . $image . '" height="300" width="250">;
+				                    </a>'
+						?>
+
+						<ul>
+							<li><?php echo '<a href="product.php?product_id=' . $productid . '" class="fa fa-search"></a>' ?></li>
+							<li><a href="" class="fa fa-shopping-cart"></a></li>
+						</ul>
+
+						<h3><a href="#"><?php echo $productname ?></a></h3>
+
+						<div><?php echo $productprice ?> Rs.
+							<span>20000.00 Rs.</span>
+						</div>
+
+
+
+						<!-- <div class="product-grid7" style="border: 1px solid #262626">
+				                <div class="product-image7">
+				                    <?php
+									//echo '<a href="product.php?product_id='.$productid.'">
+									// <img class="pic-1" src="images/'.$image.'" height="300" width="250">;
+									//</a>'
+									?>*/
+				                    <ul class="social">
+				                        <li><?php //echo '<a href="product.php?product_id='.$productid.'" class="fa fa-search"></a>' 
+											?></li>
+				                        <li><a href="" class="fa fa-shopping-cart"></a></li>
+				                    </ul>
+				                    <span class="product-new-label">New</span>
+				                </div>
+				                <div class="product-content">
+				                    <h3 class="title"><a href="#"><?php //echo $productname 
+																	?></a></h3>
+				                    <ul class="rating">
+				                        <li class="fa fa-star"></li>
+				                        <li class="fa fa-star"></li>
+				                        <li class="fa fa-star"></li>
+				                        <li class="fa fa-star"></li>
+				                        <li class="fa fa-star"></li>
+				                    </ul>
+				                    <div class="price"><?php //echo $productprice 
+														?> Rs. 
+				                        <span>20000.00 Rs.</span>
+				                    </div>
+				                </div>
+				            </div> -->
