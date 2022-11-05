@@ -9,13 +9,13 @@ document.write("<center><h1>",store_name,"<h1></center>");
 function showlogin()
 {
 	$t = document.getElementById('disp_login').style.display="block";
-	$tw = document.getElementById('disp_welcome').style.display="none";
+	$tw = document.getElementById('disp_index').style.display="none";
 }
 
 function hidelogin()
 {
 	$tt = document.getElementById('disp_login').style.display="none";
-	$ttw = document.getElementById('disp_welcome').style.display="block";
+	$ttw = document.getElementById('disp_index').style.display="block";
 }
 
 </script>

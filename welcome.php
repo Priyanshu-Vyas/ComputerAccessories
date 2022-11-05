@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>E-Store - Online Shopping in Pakistan</title>
+    	<title>Computer Accessories - Online Shopping</title>
         <link rel="stylesheet" type="text/css" href="estyle.css">
 
         <link href="https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
@@ -107,7 +107,7 @@
             	<ul>
             		<li><a href="ehome.php" class="active">HOME</a></li>
             		<li><a href="trackmyorder.php"> TRACK MY ORDER</a></li>
-            		<li><a href="info.php"> ABOUT DEVELOPERS</a></li>
+            		<li><a href="info.php"> ABOUT US</a></li>
             		
 
             		<label for="profile2" class="profile-dropdown">
@@ -354,7 +354,7 @@
 		        		<h2 class="ct-footer-list-header">Learn More</h2>
 				        <ul>
 				        	<li>
-				            	<a href="info.php">About us</a>
+				            	<a href="info.php">ABOUT US</a>
 				        	</li>
 				        	
 				        </ul>
@@ -416,7 +416,7 @@
 				        <h2 class="ct-footer-list-header">Computer Accessories </h2>
 				        <ul>
 					        <li>
-					            <a href="info.php">About Us</a>
+					            <a href="info.php">ABOUT US</a>
 					        </li>
 					        <li>
 					            <a href="" onclick="alert('We will not be responsible if you give incorrect address. Products will be deleivered once on user confirmation. If user fails to receive, company is not responsible for it.')" >Trems and Conditions</a>
@@ -437,7 +437,7 @@
 				        <div class="col-sm-6 col-md-3">
 				          	<address>
 				            	<span>Computer Accessories  Co.<br></span>
-				            	Arfa Software Technology Park<br>Lahore, Pakistan 53720<br>
+				            	VIT CHENNAI<br>TamilNadu, India 620127<br>
 				            	<span>Phone: <a href="tel:5555555555">(000) 000-000</a></span>
 				          	</address>
 				        </div>
@@ -487,8 +487,8 @@
 		      		</div>
 		      		
 		      		<div class="inner-right">
-		        		<p>Copyright © 2019 Computer Accessories Co.&nbsp;<a href="">Privacy Policy</a></p>
-		        		<p><a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by HMC Co. on <a href="" target="_blank">HMC.com</a></p>
+		        		<p>Copyright © 2022 Computer Accessories Co.&nbsp;<a href="">Privacy Policy</a></p>
+		        		
 		      		</div>
 		    	</div>
 		  	</div>

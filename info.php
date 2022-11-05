@@ -3,7 +3,7 @@
 
 <head>
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>E-Store - Online Shopping in Pakistan</title>
+    	<title>Computer Accessories - Online Shopping</title>
         <link rel="stylesheet" type="text/css" href="estyle.css">
 
         <link href="https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
@@ -27,73 +27,79 @@
 
 <style>
 
-
-
-body
-{
-	background-color: #b5afaf;
-	background-position: right top;
-	background-attachment: fixed;
+header{
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+  text-underline-offset: 7px;
+  font-size: 30px;
+  letter-spacing: 4px;
+  background-color: black;
+    color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+p {
+  justify-content: center;
+  text-align: justify;
+  font-size: 15px;
+  margin: 20px;
+  letter-spacing: 2px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.info
-{
-	background-color: #c94242;
-	background-image: url('info_images/background3.jpg');
-	background-size: 1400px 800px;
-	height: auto;
-	width; 400px;
-	font-size: 100px;
-	font-weight: bold;
-	text-align: center;
-	color: red;
-	border-radius:16px;
-	margin: auto;
-	padding: 240px;
-}
-
-img
-{
-	border-radius:16px;
-}
-
-pre
-{
-	font-family: monospace;
-  white-space: pre;
-  
+.image {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 40px;
 }
 </style>
+		<header>
+        <span>
+            <u>ABOUT US</u>
+        </span>
+    </header>
 
-	<div class="info" style="display:none">
-		<a href="welcome.php" style="color:#edf40c;text-decoration: none;">Computer Accessories </a>
-	</div>
-	<body>
-		<h1 align="center" style="font-size:50px;color:white">About us</h1>
-		<div class= "container" style="overflow: hidden; display: flex; justify-content:space-around;">
-			<center>
-				<figure>
-					<img src="info_images/adeel.png" class="image" alt="Muhammad Adeel Tajamul" width="200px" height="200px" border="3">
-					<img src="info_images/usman.png" class="image" width="200px" height="200px" border="3">
-					<img src="info_images/jahangir.png" class="image" width="200px" height="200px" border="3"> 
-					<figcaption style="text-color:#707a8c"><pre><bold>Muhammad Adeel Tajamul       Chaudhry Usman Ali       Jahangir Maqsood  </bold>  
- <italic>Backend Developer         Front End Designer        File Management  </italic></pre></figcaption>
-				</figure>
-			<figure>
-				<img src="info_images/rola.png" class="imag" width="200px" height="200px" border="3">
-				<img src="info_images/wajid.png" class="imag" width="200px" height="200px" border="3">
-				<img src="info_images/talha.png" class="imag" width="200px" height="200px" border="3">
-				<figcaption><pre>Rola paany waali Sarkaar   Wajid Haneef Ravian      Professor Talha Sahab   
- Naam ky mutabiq          Helping Hand                CSS Master     
-  rola anaa paya                                                       
-  Khud code kya                                                       
-   nahi dusroon ka                                                       
-     bhi delete kiya                                                         </pre></figcaption>
-				</figure>	
-			</br>
-			</center>
-				
-		</div>
+    <div class="image">
+        <img src="./images/about.jpg" alt="about">
+    </div>
+    
+    <p>
+        This is a web portal of <b>Computer accessories and technology</b> that aims to provide
+        good quality branded IT products online.
+        <br><br>
+
+        This Website is heading to provide full range of PC components to local customers through its wide sales
+        channels.
+
+        <br><br>
+        To provide customers superior quality and well-known brand products with best support & excellent after sale services are our motto.
+    </p>
+    <br><br>
+    <p>
+        Currently this is acting as the authorized dealer for some global leading brands e.g. <b>AMD, ADATA, Antec, Ant
+        Esports, ASUS, ASRock, Blackmagic Design, Circle, Cooler Master, Corsair, Circle, Deepcool, Inno3D, Lian Li,
+        MSI, Noctua, NZXT, Sapphire, Thermaltake, XPG, ZOTAC</b> for Indian market.
+
+        <br><br>
+        We also offer an array of world renowned brands like <b>Dell, Gigabyte, G-skill, HP, Intel, Lenovo, Logitech, LG,
+        Microsoft, Razer, Samsung, Seagate, Western Digital</b> to name a few.
+    </p>
+
+    <br><br>
+    <p>
+        Bringing the latest technologies along with the best price-performance combinations to customers have always
+        been a major concern for us.
+
+        <br><br>
+        At this Website we strive to achieve the highest level of Customer Satisfaction possible.
+
+        <br><br>
+        Our cutting edge E-commerce platform, highly experienced buying team, agile warehouse systems and state of the
+        art customer care centre provides customer with <b><i>Broader selection of products, Superior buying experience,
+        On-time delivery of products & Quick resolution of any concerns.</i></b>
+    </p>
 	
 	
 	
@@ -110,7 +116,7 @@ pre
 		        		<h2 class="ct-footer-list-header">Learn More</h2>
 				        <ul>
 				        	<li>
-				            	<a href="info.php">About us</a>
+				            	<a href="info.php">ABOUT US</a>
 				        	</li>
 				        	
 				        </ul>
@@ -172,7 +178,7 @@ pre
 				        <h2 class="ct-footer-list-header"> <a href="login.php" >Computer Accessories </h2>
 				        <ul>
 					        <li>
-					            <a href="info.php">About Us</a>
+					            <a href="info.php">ABOUT US</a>
 					        </li>
 					        <li>
 					            <a href="" onclick="alert('We will not be responsible if you give incorrect address. Products will be deleivered once on user confirmation. If user fails to receive, company is not responsible for it.')" >Trems and Conditions</a>
@@ -193,7 +199,7 @@ pre
 				        <div class="col-sm-6 col-md-3">
 				          	<address>
 				            	<span>Computer Accessories  Co.<br></span>
-				            	Arfa Software Technology Park<br>Lahore, Pakistan 53720<br>
+				            	VIT CHENNAI<br>TamilNadu, India 620127<br>
 				            	<span>Phone: <a href="tel:5555555555">(000) 000-000</a></span>
 				          	</address>
 				        </div>
@@ -243,8 +249,8 @@ pre
 		      		</div>
 		      		
 		      		<div class="inner-right">
-		        		<p>Copyright © 2019 Computer Accessories Co.&nbsp;<a href="">Privacy Policy</a></p>
-		        		<p><a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by HMC Co. on <a href="" target="_blank">HMC.com</a></p>
+		        		<p>Copyright © 2022 Computer Accessories Co.&nbsp;<a href="">Privacy Policy</a></p>
+		        		
 		      		</div>
 		    	</div>
 		  	</div>

@@ -25,7 +25,7 @@ if($_SESSION['logged_in'] == true)
 	if($_SESSION["admin"]==false)
 	{
 		echo '<script>alert("You are not admin. Only admins can view this page.");</script>';
-		echo "<meta http-equiv='refresh' content='0; URL=welcome.php'>";
+		echo "<meta http-equiv='refresh' content='0; URL=index.php'>";
 		exit;
 	}
 	$full_name = $_SESSION['fullname'];
