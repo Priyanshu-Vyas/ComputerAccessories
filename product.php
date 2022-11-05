@@ -392,7 +392,7 @@
 		      		</li>
 				     
 				    <li>
-				        <h2 class="ct-footer-list-header">Estore</h2>
+				        <h2 class="ct-footer-list-header">Computer Accessories </h2>
 				        <ul>
 					        <li>
 					            <a href="info.php">About Us</a>
@@ -415,7 +415,7 @@
 				        </div>
 				        <div class="col-sm-6 col-md-3">
 				          	<address>
-				            	<span>EStore Co.<br></span>
+				            	<span>Computer Accessories  Co.<br></span>
 				            	Arfa Software Technology Park<br>Lahore, Pakistan 53720<br>
 				            	<span>Phone: <a href="tel:5555555555">(000) 000-000</a></span>
 				          	</address>
@@ -466,7 +466,7 @@
 		      		</div>
 		      		
 		      		<div class="inner-right">
-		        		<p>Copyright © 2019 EstoreCo.&nbsp;<a href="">Privacy Policy</a></p>
+		        		<p>Copyright © 2019 Computer Accessories Co.&nbsp;<a href="">Privacy Policy</a></p>
 		        		<p><a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by HMC Co. on <a href="" target="_blank">HMC.com</a></p>
 		      		</div>
 		    	</div>

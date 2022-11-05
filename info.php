@@ -66,7 +66,7 @@ pre
 </style>
 
 	<div class="info" style="display:none">
-		<a href="welcome.php" style="color:#edf40c;text-decoration: none;">Estore</a>
+		<a href="welcome.php" style="color:#edf40c;text-decoration: none;">Computer Accessories </a>
 	</div>
 	<body>
 		<h1 align="center" style="font-size:50px;color:white">About us</h1>
@@ -169,7 +169,7 @@ pre
 		      		</li>
 				     
 				    <li>
-				        <h2 class="ct-footer-list-header"> <a href="login.php" >Estore</h2>
+				        <h2 class="ct-footer-list-header"> <a href="login.php" >Computer Accessories </h2>
 				        <ul>
 					        <li>
 					            <a href="info.php">About Us</a>
@@ -192,7 +192,7 @@ pre
 				        </div>
 				        <div class="col-sm-6 col-md-3">
 				          	<address>
-				            	<span>EStore Co.<br></span>
+				            	<span>Computer Accessories  Co.<br></span>
 				            	Arfa Software Technology Park<br>Lahore, Pakistan 53720<br>
 				            	<span>Phone: <a href="tel:5555555555">(000) 000-000</a></span>
 				          	</address>
@@ -243,7 +243,7 @@ pre
 		      		</div>
 		      		
 		      		<div class="inner-right">
-		        		<p>Copyright © 2019 EstoreCo.&nbsp;<a href="">Privacy Policy</a></p>
+		        		<p>Copyright © 2019 Computer Accessories Co.&nbsp;<a href="">Privacy Policy</a></p>
 		        		<p><a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by HMC Co. on <a href="" target="_blank">HMC.com</a></p>
 		      		</div>
 		    	</div>
