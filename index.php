@@ -50,7 +50,7 @@
 			{
 				if($_SESSION['logged_in'] == false)
 				{
-					echo '<script>alert("You must login to continue.")</script>';
+					// echo '<script>alert("You must login to continue.")</script>';
 					echo '<meta http-equiv="refresh" content="0; URL=\'login.php\'" /> ';
 					exit;
 				}
