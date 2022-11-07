@@ -255,7 +255,7 @@
 									<span class="fa fa-star checked"></span>
 									<span class="fa fa-star"></span>
 									<span class="fa fa-star"></span>
-									<span class="review-no ml-2">(41 avis)</span>
+									<span class="review-no ml-2">(41 reviews)</span>
 								</div>
 							</div>
 
@@ -299,7 +299,7 @@
 						</div>
 						<hr class="m-0 p-0">
 						<div class="row mb-4 mt-4">
-							Il reste 3 exemplaires du produits.
+							There are 3 copies of the product left.
 						</div>
 					</aside>
 				</div>
